@@ -1,0 +1,174 @@
+@import url('common.css');
+/* ================== */
+
+#wrap{
+    overflow: hidden;
+}
+div h1{
+    margin-top: 100px; margin-left: 50px;
+    font-size: 2.5em; color: #333;
+    position: relative;
+}
+div h1:after{
+    content:'';
+    position: absolute; left: -3%; bottom: 0;
+    width: 13%; height: 30%;
+    background: #a0c3d2; z-index: -5;
+}
+div strong{
+    color: #333; font-size:1.5em;
+    font-weight: unset;
+    width: 100%; text-align: center;
+}
+
+section{
+    display: flex; justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    padding: 0 150px;
+}
+section .dog{
+    width: 35%;
+    display: flex; flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+section .dog:after{
+    content: ''; position: absolute; left: -40%; bottom: -50px;
+    width: 300px ; height:400px;
+    background: url('../img/sub_img05.png') no-repeat center;
+}
+.dog form{
+    width: 100px; height: 150px;
+}
+.dog i{
+    display: block; content: ''; width: 100%; height: 100px;
+    border-radius: 50px; border: 2px solid #333;
+    background: url('../img/icon_dog01.png') no-repeat center;
+    cursor: pointer;
+}
+.dog input[type="checkbox"]{
+    display:none;
+}
+.dog input[type="checkbox"]:checked + label i{
+    background: url('../img/icon_dog02.png') no-repeat center;
+    border: 2px solid #f16c63;
+}
+.dog div{
+    width: 90%; height: 650x;
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+    background: #f7f7f7; border-radius: 30px;
+    padding: 30px 0; position: relative;
+    opacity: 0; transition: .5s;
+}
+.dog div.active{
+    opacity: 1;
+}
+.dog div:after{
+    content: ''; width: 20%; height: 1px;
+    background: #666;
+    position: absolute; left: 40%; bottom: 28%;
+}
+.dog div strong{
+    color: #333; font-size: 1.3em;
+    margin-bottom: 30px
+}
+.dog div b{
+    width: 80%; height:40px; background: #a0c3d2;
+    border-radius: 50px; color:#333;
+    display: flex; justify-content: center; align-items: center;
+}
+.dog div em{
+    font-style: unset; color:#333;
+    font-weight: bold; margin: 30px 0;
+}
+.dog div > ul{
+    width: 90%; height: 400px;
+    background: #fff; border-radius: 30px;
+    display: flex; justify-content: space-between;
+    padding: 0 30px;
+}
+.dog div > ul ul:nth-of-type(2) li{
+    font-weight: bold;
+}
+.dog div > ul ul li{
+    margin: 30px 0;
+    color: #333; font-size: 14px;
+}
+.dog div > ul ul li:nth-of-type(4){
+    margin-bottom: 100px;
+}
+
+
+section .cat{
+    width: 35%;
+    display: flex; flex-direction: column;
+    align-items: center; position: relative;
+}
+section .cat:after{
+    content: ''; position: absolute; right: -40%; bottom: -100px;
+    width: 300px ; height:400px;
+    background: url('../img/sub_img07.png') no-repeat center;
+}
+.cat form{
+    width: 100px; height: 150px;
+}
+.cat i{
+    display: block; content: ''; width: 100%; height: 100px;
+    border-radius: 50px; border: 2px solid #333;
+    background: url('../img/icon_cat01.png') no-repeat center;
+    cursor: pointer;
+}
+.cat input[type="checkbox"]{
+    display:none;
+}
+.cat input[type="checkbox"]:checked + label i{
+    background: url('../img/icon_cat02.png') no-repeat center;
+    border: 2px solid #f16c63;
+}
+.cat div{
+    width: 90%; height: 650px;
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+    background: #f7f7f7; border-radius: 30px;
+    padding: 30px 0; position: relative;
+    opacity: 0; transition: .5s;
+}
+.cat div.active{
+    opacity: 1;
+}
+.cat div:after{
+    content: ''; width: 20%; height: 1px;
+    background: #666;
+    position: absolute; left: 40%; bottom: 34%;
+}
+.cat div strong{
+    color: #333; font-size: 1.3em;
+    margin-bottom: 30px
+}
+.cat div b{
+    width: 80%; height:40px; background: #a0c3d2;
+    border-radius: 50px; color:#333;
+    display: flex; justify-content: center; align-items: center;
+}
+.cat div em{
+    font-style: unset; color:#333;
+    font-weight: bold; margin: 30px 0;
+}
+.cat div > ul{
+    width: 90%; height: 400px;
+    background: #fff; border-radius: 30px;
+    display: flex; justify-content: space-between;
+    padding: 0 30px;
+}
+.cat div > ul ul:nth-of-type(2) li{
+    font-weight: bold;
+}
+.cat div > ul ul li{
+    margin: 30px 0;
+    color: #333; font-size: 14px;
+}
+.cat div > ul ul li:nth-of-type(3){
+    margin-bottom: 150px;
+}

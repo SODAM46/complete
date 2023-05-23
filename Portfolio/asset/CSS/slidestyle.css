@@ -1,0 +1,175 @@
+@import url(common.css);
+@import url(main.css);
+
+@keyframes arrowLeftMotion{
+    0%{
+        opacity: 0.5;
+        transform: translateX(15px);
+    }
+    50%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    100%{
+        opacity: 0.5;
+        transform: translateX(15px);
+    }
+}
+@keyframes arrowRightMotion{
+    0%{
+        opacity: 0.5;
+        transform: translateX(-15px);
+    }
+    50%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    100%{
+        opacity: 0.5;
+        transform: translateX(-15px);
+    }
+}
+.project .slick-prev{
+    border: none;
+    background: none;
+    background-image: url(../img/left-arrow-icon.png);
+    background-size: 50%;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    font-size: 0;
+    cursor: pointer;
+    animation: arrowRightMotion 2s infinite ease-in-out;
+
+    position: absolute;
+    top:40%;
+
+    background-size: 50%;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    z-index: 9999;
+    cursor: pointer;
+    left: 200px;   
+}
+.project .slick-next{
+    border: none;
+    background: none;
+    background-image: url(../img/right-arrow-icon.png);
+    background-size: 50%;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    font-size: 0;
+    cursor: pointer;
+    animation: arrowLeftMotion 2s infinite ease-in-out;
+
+    position: absolute;
+    top:40%;
+
+    background-size: 50%;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    z-index: 9999;
+    cursor: pointer;
+    right: 200px; 
+}
+.project{
+    height: 100vh;
+}
+.project .slick-list{
+    overflow:visible;
+}
+.project .list-box {
+    position: relative;
+    height: 100vh;
+}
+.project .list-box .list-left{
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+.list-box .list-left .thumbnail{
+    width: 600px;
+    height: 400px;
+    border-radius: 3%;
+}
+.list-box .list-right {
+    position: absolute;
+    height: 300px;
+    top: 20%;
+    right: 25%;
+}
+.list-box .list-right ul.fixedclear::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.list-right .list-item .project-name{
+    color: var(--color-white);
+    font-size: 32px;
+    font-weight: 700;
+}
+.list-right .list-item .project-content{
+    color: var(--color-white);
+    opacity: 0.9;
+    margin-top: 10px;
+    padding-left: 3px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.list-box .list-right ul{
+    margin-top: 30px;
+}
+.list-box .list-right ul li{
+    float: left;
+    border: 1px solid var(--color-yellow);
+    color: var(--color-yellow);
+    font-size: 14px;
+    border-radius: 10rem;
+    padding: 10px 20px;
+    line-height: 15px;
+    text-align: center;
+    margin-right: 20px;
+}
+.list-right .list-item ul{
+    width: 400px;
+}
+.list-right .list-item ul li:nth-of-type(4){
+    margin-right: 0;
+    margin-top: 20px;
+}
+.list-right .detail-btn{
+    width: 180px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+
+    border-radius: 10rem;
+    padding: 0px 40px;
+    background-color: rgb(255, 216, 61,0.3);
+    cursor: pointer;
+    transition: 0.5s ease;
+    
+   margin-top: 200px;
+   /* position: absolute; */
+}
+.list-box:nth-of-type(2) .list-right .detail-btn{
+    margin-top: 150px;
+}
+.list-right .detail-btn:hover{
+    background-color: rgb(255, 216, 61,1);
+}
+.list-right .detail-btn a{
+    color: var(--color-white);
+    font-weight: 700;
+    font-size: 18px;
+    
+}
+.list-right .detail-btn:hover a{
+    color: #333;
+    transition: 0.5s ease;
+}

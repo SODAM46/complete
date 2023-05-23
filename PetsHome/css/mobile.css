@@ -1,0 +1,97 @@
+@import url('common.css');
+/* ================== */
+
+
+@media all and (max-width:600px){
+    body{
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+    #explain,
+    #service,
+    #download,
+    footer{
+        display: none;
+    }
+   header{
+    display: none;
+   }
+   #main{
+    background-position: 0 450px;
+    background-size: 100vw;
+    position: fixed;
+    height: 100%;
+   }
+   
+   #main .txt h1{
+    height: 100%;
+    color: #ffb515;
+    position: relative;
+    bottom: 10%;
+   }
+   #main .txt h1::after{
+    position: absolute;
+    content: '나 대신 우리아이돌봐줄 펫시터';
+    top: 50%;
+    left: 10%;
+    width: 200px;
+    height: 100%;
+    color: #666;
+    font-size: 24px;
+    text-align: center;
+    font-family: "Galmuri11", sans-serif;
+   }
+   #main .txt h1::before{
+    position: absolute;
+    content: '앱 다운로드 하기';
+    top: 80%;
+    left: 0%;
+    width: 250px;
+    height: 40px;
+    color: #666;
+    background-color: #a0c3d2;
+    line-height: 40px;
+    border-radius: 3rem;
+    font-size: 16px;
+    text-align: center;
+    font-family: "Galmuri11", sans-serif;
+   }
+
+   #main .txt strong{
+    /* visibility: hidden; */
+    position: relative;
+    background: rgba(255,255,255,0);
+    color: rgba(255,255,255,0);
+    box-shadow: none;
+   }
+   #main::after{
+    position: absolute;
+    content: 'App Store';
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    background-color: #ffb515;
+    width: 50%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 18px;
+   }
+   #main::before{
+    position: absolute;
+    content: 'Google Play';
+    bottom: 0%;
+    right: 0%;
+    color: #fff;
+    background-color: #000;
+    width: 50%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 18px;
+    z-index: 1;
+   }
+
+}
+

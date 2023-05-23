@@ -1,0 +1,325 @@
+@import url('common.css');
+@import url('style.css');
+#wrap{
+    position: relative;
+    overflow: hidden;
+}
+
+#subVisual{
+    height:500px; width: 100%;
+    background: url(../img/img_subVisual.jpg) no-repeat;
+    background-size : cover;
+    position: relative;
+}
+.subTitle{
+    position: absolute; left: 50%; top:50%;
+    transform: translate(-50%,-50%);
+}
+.subTitle h2{
+    color: #fff; font-size: 2em;
+}
+.subMenu{    
+    position: absolute; left: 50%; bottom: 0;
+    transform: translateX(-50%);
+}
+.subMenu ul{
+    display: flex; justify-content: center; align-items: center;
+    background: rgba(0,0,0,0.5);
+    width: 100vw; height: 60px;
+}
+.subMenu ul li{
+    color: #fff; cursor: pointer;
+    width: 200px; height: 100%;
+    display: flex; align-items: center; justify-content: center  ;
+}
+.subMenu ul li:hover{
+    color: #000;
+    background: #fff;
+}
+
+/* ceo 인사말 */
+
+#subContent article{
+    display: none;
+}
+#subContent .active{
+    display: block;
+}
+.sub_ceo{
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+}
+
+.sub_ceo h3{
+    font-size: 3vh;
+    margin: 50px;
+}
+.sub_ceo strong{
+    font-size: 3.5vh;
+    color: #116AB2;
+    transform: translateY(300px);
+    animation: txtAni 1s forwards;
+    opacity: 1;
+}
+.sub_ceo span{
+    white-space: pre-line;
+    text-align: center;
+    margin: 50px;
+    transform: translateY(300px);
+    animation: txtAni 1s forwards;
+    opacity: 1;
+}
+.sub_ceo p{
+    display: flex; align-items: center; justify-content: flex-end;
+    margin: 0 50px 50px 0; width: 50%;
+    transform: translateY(300px);
+    animation: txtAni 1s forwards;
+    opacity: 1;
+}
+.sub_ceo p em{
+    font-style: unset; font-weight: bold;
+    margin-right: 10px;
+}
+
+@keyframes txtAni{
+    0%{}
+    100%{transform: translateY(0);opacity: 1;}
+}
+
+/* 경영이념 */
+
+.sub_company{
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+}
+
+.sub_company h3{
+    font-size: 3vh;
+    margin: 50px;
+}
+.sub_company strong{
+    font-size: 3.5vh; color: #116AB2;
+    text-align: center;
+}
+
+.boxOne{
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    display: flex; margin: 150px 0;
+}
+.boxOne p{
+    font-size: 2.5vh; font-weight: bold;
+    margin-top: 50px;
+}
+.boxOne ul{
+    margin: 50px; text-align: center;
+    display: flex; flex-direction: column;
+    align-items: center;
+}
+.boxOne ul li:first-of-type{
+    background: #116AB2;
+    width:150px; height: 150px;
+    border-radius: 50%;
+    text-align: center; line-height: 210px;
+}
+.boxOne ul li img{
+    width: 50%
+}
+.boxOne ul li:nth-of-type(2){
+    font-weight: bold; margin: 30px 0;
+    font-size: 18px;
+}
+
+
+.boxTwo{}
+.boxTwo p{
+    font-size: 2.5vh; font-weight: bold;
+    text-align: center;
+}
+.boxTwo span{
+    margin: 10px 0; width: 100%;
+    text-align: center;
+}
+.boxTwo .point{
+    display: flex; flex-wrap: wrap;
+    justify-content: center; 
+    margin: 100px 0;
+}
+.boxTwo .point ul{
+    margin: 30px 70px;
+}
+.boxTwo .point ul li:nth-of-type(2){
+    font-weight: bold;
+    font-size: 18px; margin: 10px 0;
+}
+.boxTwo .point ul li{
+    white-space: pre-line;
+}
+
+/* 사업분야 */
+
+.sub_field{
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+}
+.sub_field > p{
+    margin-top: 100px; margin-bottom: 50px;
+    font-size: 3vh; font-weight: bold;
+}
+.sub_field .fieldBox{
+    display: flex; flex-wrap: wrap;
+    width: 80%; justify-content: center;
+}
+.sub_field .fieldBox div{
+    border: 1px solid #999;
+    padding: 30px 0;
+    width: 30%; margin: 50px;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: space-between;
+}
+.sub_field .fieldBox div.active{
+    margin-top: 0; opacity: 1;
+}
+.sub_field .fieldBox div img{
+    width: 50%;
+}
+.sub_field .fieldBox div p{
+    font-size: 1.3vw; font-weight: bold;
+    margin: 10px 0;
+}
+.sub_field .fieldBox div span{
+    white-space: pre-line;
+    text-align: center;
+}
+
+/* CI */
+
+.sub_ci{
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+}
+.sub_ci strong{
+    display: block; margin-top: 100px;
+    text-align: center; font-size: 3vh;
+    font-weight: bold;
+}
+.sub_ci em{
+    text-align: center; font-style: unset;
+    width: 100%; margin: 30px 0;
+}
+.sub_ci div{
+    display: flex; width: 100%; justify-content: center;
+    align-content: center;
+    margin: 100px 0;
+}
+.sub_ci div p{
+    width:400px; margin: 0 100px;
+    text-align: center;
+}
+.sub_ci div p span{
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.sub_ci i{
+    border-radius: 50%; background:#66B050;
+    width: 100px; height: 100px;
+    display: inline-block; line-height: 100px;
+    text-align: center; font-style: unset;
+    font-weight: bold; color:#fff
+}
+.sub_ci i:last-of-type{
+    background: #116AB2;
+}
+.sub_ci div span{
+    text-align: center;
+    margin: 0 30px; white-space: pre-line;
+}
+
+/* map */
+
+.sub_map{
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+}
+.sub_map strong{
+    display: block; margin: 100px 0;
+    text-align: center; font-size: 3vh;
+    font-weight: bold;
+}
+.sub_map p{
+    width: 1000px;
+    margin-bottom:10px
+}
+.sub_map span{
+    font-weight: bold; font-size: 18px;
+}
+.sub_map i{
+    white-space: pre-line;
+    font-style: unset;
+    font-size: 14px;
+}
+.sub_map .map{
+    margin-bottom: 100px;
+}
+
+
+
+
+/* 하단 */
+
+footer{
+    background: #333;
+    height: 200px; padding: 1% 15%;
+    position: relative;
+}
+footer > p{
+    color: #fff; width: 100%;
+    position: relative; margin: 30px 0;
+    font-size: 16px; cursor: pointer;
+}
+footer > p::after{
+    content: ''; display: block;
+    width: 100%; height: 1px;
+    background: #666;position: absolute;
+    bottom: -80%;
+}
+footer span{
+    color:#666; display: block;
+    font-size: 14px;
+}
+
+footer div{
+    position: fixed; left: 50%; top: 50%;
+    transform: translate(-50%,-50%);
+    border: 2px solid#000;
+    background: #fff; padding: 50px;
+    display: none;
+}
+footer div p{
+    position: relative; width: 50px; height: 50px;
+    float: right;
+    cursor: pointer;
+}
+footer div p:after{
+    position: absolute;right: 10px;
+    content: "\2573"; 
+    font-size: 30px; 
+    color: #000;
+}
+footer div > strong{
+    clear: both; font-size: 24px;
+    margin: 50px 0;
+}
+footer div ol li{
+    display: flex; flex-direction: column;
+    margin-bottom: 20px;
+}
+footer li strong{
+    font-size:18px;
+    margin-bottom: 5px;
+}
+footer li em{
+    font-style: normal;
+    white-space: pre-line;    
+}

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>안산시 중앙도서관</title>
+    <link rel="stylesheet" href="asset/css/main_style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="asset/js/placeholders.jquery.min.js"></script>
+    <script src="asset/js/main-script.js"></script>
+</head>
+<body>
+    
+    <div id="wrap">
+        <div id="skipMenu">
+            <a href="#nav-wrap">주메뉴 바로가기</a>
+            <a href="#containerBox">본문 바로가기</a>
+            <a href="#login">로그인 바로가기</a> 
+        </div> 
+
+        <div class="header-wrap">
+            <div class="header">
+                <div class="login-wrap">
+                    <ul class="login clearfix" id="login">
+                        <li><a href="">로그인</a></li>
+                        <li><a href="">회원가입</a></li>
+                        <li><a href="">아이디/비번찾기</a></li>
+                        <li><a href="">사이트맵</a></li>
+                    </ul>
+                </div>
+
+                <div class="header-logo">                
+                    <h1 class="logo"><a href="" title="홈으로이동">중앙도서관</a></h1>
+                </div>
+            </div>
+
+            <div class="gnb-wrap">
+                <ul class="gnb clearfix">
+                    <li>
+                        <a href="">자료검색</a>
+                        <ul class="gnb-depth">
+                            <li><a href="">신규자료 검색</a></li>
+                            <li><a href="">단순자료 검색</a></li>
+                            <li><a href="">상세자료 검색</a></li>
+                            <li><a href="">베스트 대출자료</a></li>
+                            <li><a href="">외부기관 링크</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">문화행사</a>
+                        <ul class="gnb-depth">
+                            <li><a href="">월중행사</a></li>
+                            <li><a href="">문화강좌</a></li>
+                            <li><a href="">영화상영</a></li>
+                            <li><a href="">독서퀴즈</a></li>
+                            <li><a href="">문화행사 갤러리</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">열린공간</a>
+                        <ul class="gnb-depth">
+                            <li><a href="">공지사항</a></li>
+                            <li><a href="">도서관에 바란다</a></li>
+                            <li><a href="">칭찬합시다</a></li>
+                            <li><a href="">자유게시판</a></li>
+                            <li><a href="">설문조사</a></li>
+                            <li><a href="">나의 추천도서</a></li>
+                            <li><a href="">서식 다운로드</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">찾아가는 도서관</a>
+                        <ul class="gnb-depth">
+                            <li><a href="">두루두루 서비스</a></li>
+                            <li><a href="">책바다 서비스</a></li>
+                            <li><a href="">내 생에 첫 도서관</a></li>
+                            <li><a href="">북스타트</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">온라인 서비스</a>
+                        <ul class="gnb-depth">
+                            <li><a href="">희망도서 신청</a></li>
+                            <li><a href="">지역서점 바로 대출</a></li>
+                            <li><a href="">자원봉사 신청</a></li>
+                            <li><a href="">도서관 견학신청</a></li>
+                            <li><a href="">사물함 신청</a></li>
+                            <li><a href="">디지털 자료실 예약</a></li>
+                            <li><a href="">전자책</a></li>
+                            <li><a href="">전자저널</a></li>
+                            <li><a href="">향토자료</a></li>
+                            <li><a href="">동아리실 예약</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">안산의 책</a>
+                        <ul class="gnb-depth">
+                            <li><a href="">한 도시 한 책 읽기</a></li>
+                            <li><a href="">도서관 책 문화축제</a></li>
+                            <li><a href="">하루 10분 독서</a></li>
+                            <li><a href="">북크로싱 독서운동</a></li>
+                            <li><a href="">사서추천도서</a></li>
+                            <li><a href="">독서동아리</a></li>
+                            <li><a href="">독서감상작<br/>전국공모전</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">작은도서관</a>
+                        <ul class="gnb-depth">
+                            <li><a href="">공립작은도서관</a></li>
+                            <li><a href="">사립작은도서관</a></li>
+                            <li><a href="">문화행사</a></li>
+                            <li><a href="">작은도서관 소식</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">도서관 소개</a>
+                        <ul class="gnb-depth">
+                            <li><a href="">인사말</a></li>
+                            <li><a href="">연혁</a></li>
+                            <li><a href="">조직도</a></li>
+                            <li><a href="">도서관 현황</a></li>
+                            <li><a href="">도서관 시설안내</a></li>
+                            <li><a href="">도서관 이용안내</a></li>
+                            <li><a href="">이용자 에티켓</a></li>
+                            <li><a href="">오시는 길</a></li>
+                            <li><a href="">자주하는 질문</a></li>
+                        </ul>
+                    </li>
+                </ul>              
+            </div>
+        </div>
+
+        <div class="content-wrap" id="containerBox">
+            <div class="visual-wrap">
+                <div class="search-wrap clearfix">
+                    <div class="search-list">
+                        <form target="_blank">
+                            <select name="" id="" title="검색조건선택">
+                                <option value="">전체</option>
+                                <option value="">도서명</option>
+                                <option value="">저자</option>
+                                <option value="">출판사</option>
+                            </select>
+                        </form>
+                    </div>
+
+                    <div class="search-box">
+                        <input type="text" placeholder="책 이름을 검색해주세요">
+                    </div>
+
+                    <div class="search-btn">
+                        <input type="submit" value="검색">
+                    </div>
+                </div>
+            </div>
+
+            <div class="icon-wrap">
+                <ul class="icon-box clearfix">
+                    <li>
+                        <a href="">
+                            <img src="asset/img/icon1.png" alt="">
+                            <span>문화강좌</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="asset/img/icon2.png" alt="">
+                            <span>자원봉사</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="asset/img/icon3.png" alt="">
+                            <span>사물함신청</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="asset/img/icon4.png" alt="">
+                            <span>지역서점바로대출</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="asset/img/icon5.png" alt="">
+                            <span>열람실현황</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="asset/img/icon6.png" alt="">
+                            <span>디지털자료실예약</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="asset/img/icon7.png" alt="">
+                            <span>전자책서비스</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="asset/img/icon8.png" alt="">
+                            <span>도서관이용안내</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="notice-wrap clearfix">
+                <div class="lt-box">
+                    <ul class="notice" id="notice">
+                        <li>
+                            <a href="" class="on">공지사항</a>
+                            <ul class="notiOn">
+                                <li><a href="">안산중앙도서관 홈페이지 희망도서 신청서비스 중단 재공지</a></li>
+                                <li><a href="">공립작은도서관(4개소) 근로자의 날(5.1) 휴관 안내</a></li>
+                                <li><a href="">2023 상반기 [안산시 도서관 소식지] 비치</a></li>
+                                <li><a href="">외국인주민지원본부 지하 증축공사에 따른 다문화작은도서관 임시휴관 안내</a></li>
+                                <li><a href="">중앙도서관 4월 문화의 날 행사 안내(강연 & 뮤지컬)</a></li>
+                                <li><a href="">◆본오1동작은도서관◆ [2022년 방과후 독서돌봄] 자원활동가 모집</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">문화강좌</a>
+                            <ul>
+                                <li><a href="">(문화의 날) 랜선 공연 ④월 - 가족 뮤지컬 [도서관에 간 사자]</a></li>
+                                <li><a href="">(문화의 날) 랜선 인문학 마당 ④월 - 이시한의 열두 달 북클럽</a></li>
+                                <li><a href="">[폐강]중앙도서관 2022년 상반기 어린이 문화교실 [난 중립이야, 탄소중립! - 5,6학년반]</a></li>
+                                <li><a href="">중앙도서관 2022년 상반기 어린이 문화교실 [난 중립이야, 탄소중립! - 2,3,4학년반]</a></li>
+                                <li><a href="">중앙도서관 [2022 시민서평단 5기 양성과정] - 심화반</a></li>
+                                <li><a href="">중앙도서관 [2022 시민서평단 5기 양성과정] - 기초반</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">관내도서관 소식</a>
+                            <ul>
+                                <li><a href="">성포도서관 도서관주간 및 세계 책의 날 기념 [책방 속 마법 우체국] 공연 안내</a></li>
+                                <li><a href="">본오도서관 2022년 가정의 달 가족체험 [타일냄비받침&티코스터 만들기] 안내</a></li>
+                                <li><a href="">본오도서관 2022년 가정의 달 성인교양 [내가 사는 또다른 세상, 메타버스] 안내</a></li>
+                                <li><a href="">대부도서관 5월 작가와의 만남 접수 안내(6-7세 및 초등대상)</a></li>
+                                <li><a href="">부곡도서관 도서관주간 기념 [도서관에서 만나는 모래 동화] 공연(비대면) NEW</a></li>
+                                <li><a href="">부곡도서관 도서관주간 기념 [도서관에서 만나는 모래 동화] 공연(비대면) NEW</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="gt-box">
+                    <strong>도서관 휴관일 안내</strong>
+                    <ul class="month clearfix" id="month">
+                        <li>
+                            <span>04</span>
+                            <em>April 2022</em>
+                            <ul>
+                                <li>04</li>
+                                <li>11</li>
+                                <li>18</li>
+                                <li>25</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>05</span>
+                            <em>May 2022</em>
+                            <ul>
+                                <li>02</li>
+                                <li>05</li>
+                                <li>08</li>
+                                <li>09</li>
+                                <li>16</li>
+                                <li>23</li>
+                                <li>30</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>06</span>
+                            <em>June 2022</em>
+                            <ul>
+                                <li>01</li>
+                                <li>06</li>
+                                <li>13</li>
+                                <li>20</li>
+                                <li>27</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p class="arrow-wrap"><span class="arrow-lt">left</span><span class="arrow-gt">right</span></p>
+                </div>
+            </div>
+
+            <div class="popup-wrap clearfix">
+                <div class="book">
+                    <div class="popup-title">
+                        <strong>추천도서</strong>
+                        <a href="">더보기</a>
+                    </div>
+                    <div class="book-list" id="bookList">
+                        <ul class="clearfix">
+                            <li><a href=""><img src="asset/img/book1.jpg" alt=""></a></li>
+                            <li><a href=""><img src="asset/img/book2.jpg" alt=""></a></li>
+                            <li><a href=""><img src="asset/img/book3.jpg" alt=""></a></li>
+                            <li><a href=""><img src="asset/img/book1.jpg" alt=""></a></li>
+                            <li><a href=""><img src="asset/img/book2.jpg" alt=""></a></li>
+                            <li><a href=""><img src="asset/img/book3.jpg" alt=""></a></li>
+                        </ul>
+                    </div>
+                    <p class="btn-wrap"><span class="btn-lt">left</span><span class="btn-gt">right</span></p>
+                </div>
+
+                <div class="popup">
+                    <div class="popup-title clearfix">
+                        <strong>팝업존</strong>
+                        <div class="control-btn">
+                            <a href="" class="left-btn">left-btn</a>
+                            <a href="" class="pause-btn">pause-btn</a>
+                            <a href="" class="right-btn">right-btn</a>
+                        </div>
+                    </div>
+                    <div class="popup-list">
+                        <ul>
+                            <li><a href=""><img src="asset/img/popup1.jpg" alt=""></a></li>
+                            <li><a href=""><img src="asset/img/popup2.jpg" alt=""></a></li>
+                            <li><a href=""><img src="asset/img/popup3.jpg" alt=""></a></li>
+                            <li><a href=""><img src="asset/img/popup4.jpg" alt=""></a></li>
+                            <li><a href=""><img src="asset/img/popup5.jpg" alt=""></a></li>
+                            <li><a href=""><img src="asset/img/popup6.jpg" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="library-wrap">
+                <div>
+                    <a href="">단원구 도서관 바로가기</a><a href="">상록구 도서관 바로가기</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <div class="footer-link clearfix">
+                <ul>
+                    <li><a href="">이메일추출방지정책</a></li>
+                    <li><a href="">개인정보처리방침</a></li>
+                    <li><a href="">도서관행서비스현장</a></li>
+                    <li><a href="">도서관윤리선정</a></li>
+                    <li><a href="">한 눈에 보는 안산시 도서관</a></li>
+                </ul>
+                <p class="topBtn">
+                    <a href="">TOP ▲</a>
+                </p>
+            </div>
+
+            <div class="address-wrap clearfix">
+                <div class="address-lt">
+                    <h2 class="footer-logo">안산시 로고</h2>
+                    <div class="address">
+                        <p><strong>중앙도서관</strong></p>                    
+                        <p><strong>우편번호</strong>15485 경기도 안산시 단원구 안산천남로 14 (고잔동) <strong>TEL</strong> : 031-481-2703 <strong>FAX</strong> : 031-481-3622</p>
+                        <p>Copyright &copy; 2007 Ansan Joongang Library. All Rights Reserved.</p>
+                    </div>
+                </div>                
+
+                <div class="footer-site clearfix">
+                    <div class="siteLink">
+                        <form target="_blank">
+                            <select name="" id="" title="관련사이트">
+                                <option value="">관련사이트</option>
+                                <option value="">국가전자도서관</option>
+                                <option value="">국립장애인도서관</option>
+                                <option value="">디브러리</option>
+                            </select>
+                        </form>
+                    </div>
+                    <input type="submit" value="이동">
+                </div>                
+            </div>
+
+                        
+        </div>
+    </div>
+
+</body>
+</html>

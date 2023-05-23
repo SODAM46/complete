@@ -1,0 +1,126 @@
+@import url('common.css');
+
+#wrap{
+    overflow: hidden;
+}
+
+.text{
+    width: 100%; height: 10%;
+    padding-left: 10%;
+}
+.typing-txt{
+    display: none;
+}
+.typing{
+    width: 100%;
+    font-size: 5vw;
+    font-family: 'Righteous', cursive;
+    color: #333; 
+    position: relative;
+    letter-spacing:5px;
+    z-index: 10; 
+}
+
+.typing:after{
+    content: '';
+    width: 0; height: 15%;
+    background: #efb200;
+    position: absolute;
+    left: -1%; top: 40%;
+    z-index: -10;
+    animation: line .5s forwards;
+    animation-delay: 1.2s;
+}
+@keyframes line{
+    100%{width: 28%;}
+}
+
+
+.rotate {
+    display: flex; justify-content: center;
+    align-items: center; flex-wrap: wrap;
+    position: relative;
+    margin-top: 50px;
+    padding: 100px 0;
+}
+  
+.card{
+    width: 250px;
+    height: 300px;
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    margin: 30px 50px; transition: 0.8s;
+}
+
+.info{
+    position: absolute;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; align-items: center;
+
+}
+
+.info img{
+    transform: scale(0.7);
+}
+.info p{
+    font-size: 1.5em; font-weight: bold;
+    font-family: 'Righteous', cursive;
+    margin-top: 15px;
+}
+.info span{
+    white-space: pre-line;
+    color: #fff;
+    font-size: 4em;
+    font-family: 'MapoPeacefull'
+}
+
+.front{
+    background: #f7f7f7;
+    z-index: 10;
+    transform: scale(0);
+    animation: load .5s .3s forwards;
+}
+@keyframes load{
+    100%{transform: scale(1);}
+}
+.card:nth-of-type(2) .front{
+    animation-delay: .7s;
+}
+.card:nth-of-type(3) .front{
+    animation-delay: 1.1s;
+}
+
+.back{
+    transform: rotateY(180deg);
+    background: #efb200;
+}
+
+.card:last-of-type .back span{
+    font-size: 2em;
+    font-family: 'Righteous', cursive;
+}
+.card:hover {
+transform: rotateY(180deg);
+}
+
+.card:hover .front{
+z-index: 0;
+}
+
+
+article:last-of-type{
+    background: #fff; 
+    width: 100%; padding: 0 15%;
+    visibility: hidden;
+    /* display: none; */
+    height: 150px;
+}
+
+

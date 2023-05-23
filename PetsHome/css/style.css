@@ -1,0 +1,479 @@
+@import url('common.css');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+@import url("https://cdn.jsdelivr.net/npm/galmuri/dist/galmuri.css");
+
+/* color
+#a0c3d2
+#ffd700
+#f16c63
+#ffb515
+*/
+
+body{
+overflow: hidden;
+}
+#wrap{}
+#main{
+    width: 100vw; height: 100vh;
+    position: relative;
+    background-image: url(../img/visual_bg.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+#main::after{
+    position: absolute;
+    content: '';
+    background-color: rgba(255,255,255,0.8);
+    width: 100%;
+    height: 100%;
+}
+
+
+#main .txt{
+    position: absolute; left:50%; top:50%;
+    transform:translateY(-50%) translateX(-50%);
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+#main .txt img{
+    width: 100px; height: 100px;
+}
+#main .txt h1{
+    color: #333;
+    font-size: 4em;
+    /* font-family: 'Julius Sans One', sans-serif; */
+    font-family: 'Press Start 2P', cursive;
+    margin-top:30px;
+}
+#main .txt strong{
+    cursor: pointer; font-weight: unset;
+    border-radius: 30px;
+    width: 30%; height: 10%;
+    margin-top: 80px;
+    background: #ffb515;
+    box-shadow: 8px 8px 0px 0px #000;
+    font-size: 1.5em; color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+}
+#main .txt strong:hover{
+    box-shadow: 0px 0px 0px 0px #000;
+    transform: translate(8px, 8px) 
+}
+
+#explain{
+    width: 100vw; height: 100vh;
+    display: flex;
+}
+#explain .left{
+    width: 50%;height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 10%;
+}
+#explain .left h2{
+    color: #333;
+    font-size: 3em; 
+    position: relative; 
+}
+#explain .left h2:after{
+    content: '';
+    position: absolute; left: 0; bottom: 0;
+    width: 100%; height: 30%;
+    background: #ffb515;
+    z-index: -5;
+}
+#explain .left strong{
+    color: #333;
+    font-size: 2.5em;
+    position: relative;
+}
+#explain .left strong:after{
+    content: '';
+    position: absolute; left: 0; bottom: 0;
+    width: 100%; height: 30%;
+    background: #ffb515;
+    z-index: -5;
+}
+#explain .left span{
+    width: 100%;
+    color: #666;
+    font-size: 1.5em;
+    font-weight: normal; 
+    position: relative;
+    white-space: pre-line; 
+}
+
+#explain .right{
+    width: 50%; height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: hidden;
+    
+}
+#explain .right img{
+    width: 80%;
+    transform: translateX(100%);
+    transition: 0.5s;
+}
+#explain .right.active img{
+    transform: translateX(0);
+}
+
+
+
+
+#service{
+    width: 100vw; height: 100vh;
+    background: #a0c3d2;
+    display: flex;
+}
+#service .left{
+    width: 50%; height: 100%;
+    display: flex;flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#service .left h3{
+    color:#fff;
+    font-size: 2.5em;
+    white-space: pre-line;
+    text-align: center;
+    font-family: "Galmuri11", sans-serif;
+}
+#service .left p:nth-of-type(1){
+    width: 480px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;  
+    margin-top: 100px;
+}
+#service .left span{
+    color: #fff;
+    font-size: 1.1em;    
+    margin: 15px;
+    border-bottom: 1px solid#fff;
+}
+#service .left p:nth-of-type(2),p:nth-of-type(3){
+    background: #fff;
+    border-radius: 30px;
+    width: 25%; height: 5%;
+    display: flex; justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+#service .left p:nth-of-type(2){
+    margin-top: 150px;
+}
+#service .left p:nth-of-type(3){
+    margin-top: 20px;
+}
+#service .left p em{
+    font-style: normal;  
+    color: #a0c3d2;
+}
+#service .left p strong{
+    color: #a0c3d2;
+    margin-left: 10px;
+    font-size: 1.1em;
+}
+#service .right{
+    width: 50%; height: 100%;
+    position: relative;
+    background: #ffcb5a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#service .right h4{
+    width: 100%; height: 100px;
+    margin-top: 150px;
+    display: flex; justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    /* font-weight: bold; */
+    color: #333;
+    position: relative;
+    z-index: 0; margin-bottom: 50px;
+    font-family: "Galmuri11", sans-serif;
+}
+#service .right h4:after{
+    content:'';
+    width: 42%; height: 20%;
+    background: #f16c63;
+    position: absolute; bottom:10px; 
+    z-index: -5;
+}
+#service .right p{
+    text-align: center;    
+    margin-bottom:50px
+}
+#service .right figure{
+    width: 80px; height:80px;
+    position: absolute;
+    border-radius: 100px;
+    background: rgba(255,255,255,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#service .right figure:nth-of-type(1){
+    left: 25%; top: 40%;
+}
+#service .right figure:nth-of-type(2){
+    right:25%; top: 49%;
+}
+#service .right figure:nth-of-type(3){
+    left: 25%; bottom: 34%;
+}
+#service .right figure:nth-of-type(4){
+    right:25%; bottom: 25%;
+}
+#service .right figure img{
+    width: 50%;
+}
+#service .right figure figcaption{/*여기다*/
+    position: absolute; 
+    background: #f16c63; color:#fff;
+    
+    font-family: "Galmuri11", sans-serif;
+    border-radius: 25px;
+    width: 250px; height:50px;    
+    display: flex; justify-content: center;
+    align-items: center; 
+    white-space: pre-line; text-align: center;
+    transform: translateY(50px);
+    transition: .5s;
+    visibility: hidden;
+}
+#service .right figure:nth-of-type(odd) figcaption{
+    left:90px; top:15px;
+}
+#service .right figure:nth-of-type(even) figcaption{
+    right: 90px; top:15px;
+}
+#service .right figure.active figcaption{
+    transform: translateY(0);
+    visibility: unset;
+}
+
+
+#download{
+    width:100vw; height: 100vh;
+    position: relative;
+}
+#download .top{
+    width: 100%; height: 75%;
+    background: #fff;
+    display: flex; flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 10%;
+    position: relative;
+}
+#download .top h5{
+    font-size: 2em; color: #333;
+    text-align: center;
+    margin: 50px; width: 100%;
+}
+
+#download .top .video{
+    width: 285px; height: 550px;
+    overflow: hidden; margin: 0 auto;
+    position: absolute; left: 17%; top: 18%;
+}
+#download .top .video video{
+    height: 100%;
+}
+#download .top div{
+    width: 200px;
+    padding-top: 100px;
+}
+#download .top div span{
+    text-align: center;
+}
+#download .top div span img{
+    width: 50%;
+    margin-right: 10px;
+    margin-bottom: 50px;
+}
+#download .top div a{
+    width: 200px; height: 50px;
+    background: #fff; border-radius: 30px;
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    color: #333; font-weight: bold; 
+    float: left;
+    box-shadow: 8px 8px 0px 0px #000;
+    transition: .3s;  
+}
+#download .top div a:hover{
+    box-shadow: 0px 0px 0px 0px #000;
+    transform: translate(8px, 8px) 
+}
+#download .top div span{
+    float: right;
+}
+#download .top div a img{
+    width: 13%; margin: 0 30px;
+}
+
+#download .bottom{
+    width: 100%; height: 25%;
+    background: #ffcb5a;
+    text-align: center;
+    display: flex; justify-content: center;
+    align-items: center; flex-wrap: wrap;
+}
+#download .bottom strong{
+    color: #333; font-size: 2em;
+    width:100%
+}
+#download .bottom p{
+    margin: 0 50px; padding: 15px 35px;
+    color: #333; font-size:1.3em;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    position: relative;
+    cursor: pointer;
+}
+#download .bottom p span{
+    position: absolute;
+    background: #fff;
+    transition: 0.5s; 
+}
+#download .bottom .borderRight{
+    right: 0; bottom: 0; width:2px; height: 0;
+}
+#download .bottom .borderLeft{
+    left:0; top: 0; width: 2px; height: 0;
+}
+#download .bottom p:hover .borderRight{
+    height: 100%;   
+}
+#download .bottom p:hover .borderLeft{
+    height: 100%; 
+} 
+
+
+/* message popup */
+#download #popup{
+    position: fixed; left:0; top:0;
+    width: 100vw; height: 100vh; z-index: 10;
+    background: rgba(0,0,0,0.5);
+    padding: 10% 20%;
+    display: flex; justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+#download #popup.active{
+    visibility: unset;
+}
+#download .message{  
+    clear: both; 
+    background-color: #fff;
+    width: 50%; height: 60vh;
+    display: flex;flex-direction: column;
+    align-items: center;   
+}
+.message .close{
+    width: 100%;
+    display: flex; flex-direction: column;
+    align-items: flex-end;
+    cursor: pointer;
+    margin: 30px;
+}
+.message .close span{
+    width: 30px; height: 3px;
+    background: #000;
+    margin-right: 10px;
+}
+.message .close span:first-of-type{
+    transform: rotate(45deg)
+}
+.message .close span:last-of-type{
+    transform: rotate(-45deg) translate(2px,-3px)
+}
+.message .info{
+    display: flex;justify-content: center;
+    flex-direction: column; align-items: center;
+    margin-bottom: 50px;
+}
+.message .info strong{
+    font-size: 2em; color: #333;
+}
+.message .info small{
+    color: #999;font-weight: bold;
+    font-size: 1.2em;
+}
+.message .send{}
+.message .send form{
+    display: flex; flex-wrap: wrap;
+    width: 400px; justify-content: center;
+}
+.message .send input[type="text"]{
+    width: 300px; height: 60px;
+    border-radius: 30px 0 0 30px; text-align: center;
+    border: 1px solid #999;
+    border-right: 0; font-size: 0.9em;   
+}
+.message .send button:nth-of-type(1){
+    width: 100px; height: 60px;
+    border-radius: 0 30px 30px 0;
+    border: 1px solid #999;
+    border-left: 0; font-weight: bold;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.message .send i{
+    font-style:unset;
+    background: url('../img/icon_off.png') no-repeat;
+    padding-left: 25px; cursor: pointer;
+}
+.message .send input[type="checkbox"]{
+   display: none;
+}
+.message .send input[type="checkbox"]:checked + label i{
+    background: url('../img/icon_on.png') no-repeat;
+}
+.message .send button:nth-of-type(2){
+    border: 0;background: none;
+    margin-left: 10px; font-size: 13px;
+    padding: 3px 0 2px 0; border-bottom: 1px solid #999;
+    cursor: pointer;
+}
+.message ul{
+    margin: 20px 0;
+}
+.message ul li{
+    font-size: 13px;
+    margin: 5px 0;
+}
+.message .send ul{
+    visibility: hidden;
+}
+.message .send ul.active{
+    visibility: unset;
+}
+.message .send ul{
+    border-top: 1px solid#999;
+    border-bottom: 1px solid#999;
+    padding: 20px 0; 
+}
+.message .send ul li:nth-of-type(1){
+    font-weight: bold; margin-bottom: 10px;
+}

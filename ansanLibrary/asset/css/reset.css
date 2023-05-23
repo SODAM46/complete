@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+body, div, a, h1, ul, li, form, select, option, img, strong,
+span, em, p, h2, button{ margin: 0; padding: 0; box-sizing: border-box; color: #333; font-size: 14px;}
+
+ul{list-style: none;}
+em{font-style: normal;}
+strong, b{font-weight: unset;}
+a{text-decoration: none;}
+a:visited{color: #333;}
+img{border: 0 none;}
+img,input,select{
+    vertical-align: middle;
+}

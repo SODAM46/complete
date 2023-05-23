@@ -1,0 +1,307 @@
+@import url(common.css);
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap'); */
+
+#wrap{
+    overflow: hidden;
+    position: relative;
+}
+
+/* skip-memu */
+
+#skipMenu{
+    position: relative;
+    width: 100%;
+    z-index: 999;
+}
+#skipMenu a{
+    position: absolute;
+    top:-100px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    font-weight: 600;
+}
+#skipMenu a:hover,
+#skipMenu a:active,
+#skipMenu a:focus{
+    position: absolute;
+    top:0;
+    width: 100%;
+    display: block;
+    background-color: var(--color-yellow);
+    color:var(--color-blue);
+    font-size: 16px;
+    text-align:center;
+    text-decoration: none;
+}
+
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* nav-gnb */
+#pf-gnb{
+    position: fixed;
+    bottom: 30vh;
+    right: 30px;
+    z-index: 999;
+}
+
+.nav-gnb ul li{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.nav-gnb ul li img{
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    opacity: 0.3;
+}
+.nav-gnb ul li:last-child img{
+    width: 45px;
+}
+.nav-gnb ul li img:hover{
+    opacity: 0.8;
+}
+
+
+/* visual */
+#pf-visual{
+    background-image: url(../img/visual-bg-img.png);
+    background-size: 90%;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    animation: movebg 18s linear infinite;
+}
+
+@keyframes movebg{
+    0%{ background-position: 0 center; }
+    100%{ background-position: -100vw center; }
+}
+
+.visual-txt .top-txt{    
+    color: var(--color-white);
+    font-weight: 700;
+    font-size: 26px;
+
+    position: absolute;
+    top: 33%;
+    left: 26%;
+}
+.visual-txt .top-txt .visual-name{
+    color: var(--color-yellow);
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.visual-txt .bottom-txt{
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    font-size: 220px;
+    color: var(--color-white);
+
+    position: absolute;
+    top: 35%;
+    left: 25%;
+}
+.bottom-txt .full-moon{
+    width: 200px;
+    height: 200px;
+    background-image: url(../img/full-moon-img.png);
+    background-size: 100%;
+    margin: 0px 10px -15px 20px;
+}
+
+
+/* about */
+#pf-about{
+    width: 100vw;
+    height: 100vh;
+}
+#pf-about .about-box{
+    margin-top: 50px;
+}
+#pf-about .about-h1 h1{
+    font-weight: 700;
+    font-size: 62px;
+    color: var(--color-blue);
+    padding: 50px 0 30px 150px;
+    position: relative;
+}
+#pf-about .about-h1 h1::before{
+    content: '';
+    width: 450px;
+    height: 450px;
+    background-color: var(--color-yellow);
+    display: inline-block;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 200px;
+    left: 150px;
+    z-index: -1;
+}
+.about-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-box .about-left{
+    width: 500px;
+    height: 500px;
+    text-align: center;
+}
+.about-box .about-left .memoji{
+    width: 400px;
+    height: 400px;
+    background-image: url(../img/memoji-img.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.about-box .about-left .hashtag{
+    width: 400px;
+    text-align: left;
+    margin-left: 50px;
+}
+.about-box .about-left .hashtag span{
+    color: var(--color-blue);    
+    font-weight: 700;
+    font-size: 22px;
+}
+.about-box .about-right {
+    width: 850px;
+}
+.about-box .about-right p{
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 30px;
+}
+.about-box .about-right ul {
+    margin-top: 50px;
+}
+.about-box .about-right ul li{    
+    font-size: 18px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+
+}
+
+.about-box .about-right ul li:before{
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image:url(../img/check-icon.png);
+    background-size: 100%;
+    margin-right: 10px;
+    
+}
+
+.about-box .about-right ul li .small-txt{
+    height: 15px;
+    font-size: 12px;
+    line-height:20px;
+}
+
+/* skill */
+#pf-skill{
+    width: 100vw;
+    height: 100vh;
+}
+#pf-skill h2{    
+    font-weight: 700;
+    font-size: 62px;
+    color: var(--color-blue);
+    padding: 50px 0 30px 150px;
+}
+.skill-box{
+    /* display: flex; */
+    width: 100%;
+    height: 500px;
+    text-align:center;
+    margin-left: 50px;
+}
+.skill-box li{
+    width: 100px;
+    height: 100px;
+    margin-right: 200px;
+    margin-top: 100px;
+    display:inline-block;zoom:1;    
+    
+}
+.skill-box li:nth-last-child(){
+    margin-right: 0;
+}
+.skill-box img{
+    width: 100%;
+}
+.skill-box li span, strong{    
+    font-weight: 700;
+    font-size: 38px;
+    color: var(--color-blue);
+}
+
+
+/* pf-project */
+/* .hiddenText{
+    text-indent:-10000px
+} */
+#pf-project{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-blue);
+}
+
+#pf-project h3{    
+    font-weight: 700;
+    font-size: 62px;
+    color: var(--color-yellow);
+    text-align: center;
+    padding-top: 50px;
+}
+
+/* pf-contact */
+#pf-contact{
+    background-color: var(--color-blue);
+    padding-left: 150px;    
+    position: relative;
+    padding-top: 150px;
+    height: 450px;
+}
+#pf-contact h4 .contact-img{
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/crescent-moon-img.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transform: rotate(30deg);
+}
+#pf-contact h4 .contact-txt{
+    font-weight: 700;
+    font-size: 62px;
+    color: var(--color-yellow);
+    position: absolute;
+    top: 127px;
+    left: 185px;
+    z-index: 999;
+}
+
+#pf-contact .address{
+    margin-top: 30px;
+    width: 500px;
+    height: 300px;
+}
+#pf-contact .address span{
+    font-weight: 700;
+    font-size: 24px;
+    color:var(--color-white);
+}

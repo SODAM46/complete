@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+body, div, a, h1, img, h2, header, ul, li, strong, span, form, select, option, input, h3,
+em, h4, h5, h6, b, p{ margin: 0; padding: 0; box-sizing: border-box; color: #333;}
+
+ul{list-style: none;}
+em{font-style: normal;}
+strong, b{font-weight: unset;}
+a{text-decoration: none;}
+a:visited{color: #333;}
+a:hover,a:active,a:focus{
+    color: #333;
+    text-decoration: underline;
+}
+img{border: 0 none;}
+img,input,select{
+    vertical-align: middle;
+}
