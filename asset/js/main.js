@@ -1,4 +1,4 @@
-// Nav Fixed
+// Nav Scroll
     const navGnb = document.getElementsByClassName("nav-gnb");
     const navGnbLis = navGnb[0].querySelectorAll("ul li");
     const navGnbUl = navGnb[0].querySelector("ul");
@@ -10,11 +10,10 @@
 
     navGnbLis.forEach(function(Lis, index){
         Lis.addEventListener("click",function(){
-            for(let i=0; i<4; i++){
-                navGnbLis[i].firstElementChild.style.opacity='0.3'
-            }
-            Lis.firstElementChild.style.opacity = '0.3';  
-            // console.log(index);
+            // for(let i=0; i<4; i++){
+            //     navGnbLis[i].firstElementChild.style.opacity='0.3'
+            // }
+            // Lis.firstElementChild.style.opacity = '0.3';  
             let datasetId = index;
             let sectionNum = eval('Section' + datasetId);
             const interNav = 
@@ -22,16 +21,33 @@
                 clearInterval(interNav);
                 window.scrollTo({left:0,top:sectionNum.offsetTop,behavior: "smooth" });
             },0)                           
-            Lis.firstElementChild.style.opacity = '1';
-            // console.log(sectionNum);
+            // Lis.firstElementChild.style.opacity = '1';
 
             if(datasetId == '2'){
                 setTimeout(counting,500);
                 bln = false;
             }
-        })     
-            
+        });
+        
+        window.addEventListener("scroll",function(){
+            let datasetId = index;
+            let sectionNum = eval('Section' + datasetId);
+
+            if(window.scrollY  >= sectionNum.offsetTop-500){
+                for(let i=0; i<4; i++){
+                    navGnbLis[i].firstElementChild.style.opacity='0.3'
+                }  
+                Lis.firstElementChild.style.opacity = '1';
+        
+            }
+        
+        })
     })
+
+
+
+
+
 
 
 // Skill Counting
@@ -70,7 +86,7 @@ function counting(){
         new numberCounter("counter6", 80);
 };
 
-
+// counting start
 const boxOfftop = Section2.offsetTop; // pf-skill.offsetTop
 let bln = true;
 
@@ -84,3 +100,5 @@ window.addEventListener("scroll",function(){
 })
 
 
+// slide slick
+$('.single-item').slick();
